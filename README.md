@@ -11,22 +11,14 @@
 
 <br/>
 
-[![USDC](https://img.shields.io/badge/USDC-Ethereum%20Mainnet-2775CA?style=for-the-badge&logo=ethereum&logoColor=white)](https://www.circle.com/usdc)
+[![USDC](https://img.shields.io/badge/USDC-2775CA?style=for-the-badge)](#-what-is-aegis)
 [![Zero-Knowledge](https://img.shields.io/badge/ZK-Groth16-3BA3FF?style=for-the-badge)](#-the-cryptography)
 [![Non-custodial](https://img.shields.io/badge/Non--custodial-No%20admin%20keys-061B3A?style=for-the-badge)](#-trust-assumptions)
 [![License](https://img.shields.io/badge/License-MIT-22c55e?style=for-the-badge)](#-license)
 
-[![Solidity](https://img.shields.io/badge/Solidity-^0.8.20-363636?style=for-the-badge&logo=solidity&logoColor=white)](contracts/)
 [![Foundry](https://img.shields.io/badge/Built%20with-Foundry-e98a15?style=for-the-badge)](https://getfoundry.sh)
 [![React](https://img.shields.io/badge/React-18-149ECA?style=for-the-badge&logo=react&logoColor=white)](app/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](app/)
-[![Vite](https://img.shields.io/badge/Vite-5-646CFF?style=for-the-badge&logo=vite&logoColor=white)](app/)
 [![Privy](https://img.shields.io/badge/Wallets-Privy-6A6FF5?style=for-the-badge)](https://privy.io)
-
-[![Tests](https://img.shields.io/badge/tests-18%20passing-2EA043?style=for-the-badge&logo=checkmarx&logoColor=white)](#-testing)
-[![Circuit](https://img.shields.io/badge/circom-2.0-1C1C1C?style=for-the-badge)](contracts/circuits)
-[![Poseidon](https://img.shields.io/badge/hash-Poseidon-8B5CF6?style=for-the-badge)](#merkle-tree)
-[![Status](https://img.shields.io/badge/status-experimental-f59e0b?style=for-the-badge)](#%EF%B8%8F-security--compliance)
 
 </div>
 
