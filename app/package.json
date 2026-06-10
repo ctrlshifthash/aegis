@@ -1,0 +1,41 @@
+{
+  "name": "aegis-protocol-app",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "typecheck": "tsc -b --noEmit",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@privy-io/react-auth": "^2.13.0",
+    "@privy-io/wagmi": "^1.0.3",
+    "@solana-program/system": "^0.7.0",
+    "@solana-program/token": "^0.5.1",
+    "@solana/kit": "^2.3.0",
+    "@solana/spl-token": "^0.4.14",
+    "@solana/wallet-adapter-base": "^0.9.23",
+    "@solana/wallet-standard-wallet-adapter-base": "^1.1.4",
+    "@solana/wallet-standard-wallet-adapter-react": "^1.1.4",
+    "@solana/web3.js": "^1.98.4",
+    "@tanstack/react-query": "^5.62.0",
+    "buffer": "^6.0.3",
+    "circomlibjs": "^0.1.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "snarkjs": "^0.7.6",
+    "viem": "^2.21.0",
+    "vite-plugin-node-polyfills": "^0.22.0",
+    "wagmi": "^2.14.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "~5.6.3",
+    "vite": "^5.4.11"
+  }
+}

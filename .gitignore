@@ -1,0 +1,22 @@
+# Local-only working dirs (not part of the deliverable)
+_source/
+_tools/
+
+# Secrets / env
+.env
+.env.*
+!.env.example
+
+# Node
+node_modules/
+app/dist/
+
+# Foundry
+contracts/cache/
+contracts/out/
+contracts/broadcast/
+contracts/lib/
+
+# OS
+.DS_Store
+Thumbs.db
