@@ -20,6 +20,11 @@
 [![React](https://img.shields.io/badge/React-18-149ECA?style=for-the-badge&logo=react&logoColor=white)](app/)
 [![Privy](https://img.shields.io/badge/Wallets-Privy-6A6FF5?style=for-the-badge)](https://privy.io)
 
+<br/>
+
+[![Website](https://img.shields.io/badge/%F0%9F%8C%90%20tryaegisprotocol.app-2775CA?style=for-the-badge)](https://tryaegisprotocol.app)
+[![X](https://img.shields.io/badge/%40tryAegisProtocol-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/tryAegisProtocol)
+
 </div>
 
 ---

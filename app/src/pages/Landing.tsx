@@ -71,7 +71,7 @@ export default function Landing({
               {n.label}
             </a>
           ))}
-          <a href="https://github.com" target="_blank" rel="noreferrer">
+          <a href="https://github.com/ctrlshifthash/aegis" target="_blank" rel="noreferrer">
             Source
           </a>
         </div>
@@ -460,7 +460,7 @@ export default function Landing({
                 {n.label}
               </a>
             ))}
-            <a href="https://github.com" target="_blank" rel="noreferrer">
+            <a href="https://github.com/ctrlshifthash/aegis" target="_blank" rel="noreferrer">
               Source
             </a>
           </div>
