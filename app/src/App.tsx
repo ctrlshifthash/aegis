@@ -1,17 +1,23 @@
 import { useEffect, useState } from 'react';
 import Landing from './pages/Landing';
 import Dapp from './pages/Dapp';
+import SolanaTransfer from './pages/SolanaTransfer';
 import { CursorGlow } from './components/CursorGlow';
 import { useMagnetic } from './hooks/useReveal';
 
-type View = 'landing' | 'app';
+type View = 'landing' | 'app' | 'solana';
 export type Theme = 'dark' | 'light';
 
+function viewFromHash(): View {
+  const h = window.location.hash;
+  if (h === '#app') return 'app';
+  if (h === '#solana') return 'solana';
+  return 'landing';
+}
+
 export default function App() {
-  // Lightweight hash routing so /#app deep-links into the dApp.
-  const [view, setView] = useState<View>(() =>
-    window.location.hash === '#app' ? 'app' : 'landing',
-  );
+  // Lightweight hash routing so /#app and /#solana deep-link in.
+  const [view, setView] = useState<View>(viewFromHash);
   const [theme, setTheme] = useState<Theme>(() => {
     const p = new URLSearchParams(window.location.search).get('theme');
     if (p === 'light' || p === 'dark') return p;
@@ -19,7 +25,7 @@ export default function App() {
   });
 
   useEffect(() => {
-    const onHash = () => setView(window.location.hash === '#app' ? 'app' : 'landing');
+    const onHash = () => setView(viewFromHash());
     window.addEventListener('hashchange', onHash);
     return () => window.removeEventListener('hashchange', onHash);
   }, []);
@@ -30,7 +36,7 @@ export default function App() {
   }, [theme]);
 
   function go(next: View) {
-    window.location.hash = next === 'app' ? 'app' : '';
+    window.location.hash = next === 'landing' ? '' : next;
     setView(next);
     window.scrollTo({ top: 0 });
   }
@@ -43,6 +49,8 @@ export default function App() {
       <CursorGlow />
       {view === 'app' ? (
         <Dapp onHome={() => go('landing')} theme={theme} onToggleTheme={toggleTheme} />
+      ) : view === 'solana' ? (
+        <SolanaTransfer onHome={() => go('landing')} theme={theme} onToggleTheme={toggleTheme} />
       ) : (
         <Landing onLaunch={() => go('app')} theme={theme} onToggleTheme={toggleTheme} />
       )}

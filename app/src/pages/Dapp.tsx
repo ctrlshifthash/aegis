@@ -99,9 +99,14 @@ export default function Dapp({
         </div>
       </nav>
 
-      <button className="back-link" onClick={onHome} style={{ marginBottom: '0.9rem' }}>
-        ← Back to home
-      </button>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.9rem' }}>
+        <button className="back-link" onClick={onHome}>
+          ← Back to home
+        </button>
+        <a className="back-link" href="#solana">
+          Send on Solana →
+        </a>
+      </div>
 
       <div className="banner banner-legal">
         Privacy software. You are solely responsible for legal &amp; tax compliance in your
