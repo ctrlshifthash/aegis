@@ -39,6 +39,14 @@ function Root() {
           loginMethods: isLocal ? ['wallet'] : ['wallet', 'email'],
           embeddedWallets: { createOnLogin: isLocal ? 'off' : 'users-without-wallets' },
           externalWallets: { solana: { connectors: solanaConnectors } },
+          solanaClusters: [
+            {
+              name: 'mainnet-beta',
+              rpcUrl:
+                (import.meta.env.VITE_SOLANA_RPC_URL as string | undefined) ||
+                'https://api.mainnet-beta.solana.com',
+            },
+          ],
           defaultChain: activeChain,
           supportedChains: [activeChain],
           appearance: {

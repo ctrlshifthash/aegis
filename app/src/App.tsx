@@ -52,7 +52,7 @@ export default function App() {
       ) : view === 'solana' ? (
         <SolanaTransfer onHome={() => go('landing')} theme={theme} onToggleTheme={toggleTheme} />
       ) : (
-        <Landing onLaunch={() => go('app')} theme={theme} onToggleTheme={toggleTheme} />
+        <Landing onLaunch={() => go('solana')} theme={theme} onToggleTheme={toggleTheme} />
       )}
     </>
   );
