@@ -17,6 +17,13 @@ contracts/out/
 contracts/broadcast/
 contracts/lib/
 
+# Solana / Anchor
+solana/target/
+solana/.anchor/
+solana/test-ledger/
+solana/node_modules/
+solana/**/*.rs.bk
+
 # OS
 .DS_Store
 Thumbs.db
