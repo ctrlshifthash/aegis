@@ -1,6 +1,6 @@
 // Social / external links for the nav. Replace the hrefs with the real ones.
 const LINKS = {
-  pump: 'https://pump.fun',
+  pump: 'https://pump.fun/coin/Gd6KzchnEg8MPqynnX3E4udjtmfksezhxxKcrWFypump',
   x: 'https://x.com/AegisProtocolHQ',
   github: 'https://github.com/KashRazzaghi/Aegis-Protocol',
 };
