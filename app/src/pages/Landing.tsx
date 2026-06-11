@@ -72,7 +72,7 @@ export default function Landing({
             </a>
           ))}
           <a href="#solana">Solana</a>
-          <a href="https://github.com/ctrlshifthash/aegis" target="_blank" rel="noreferrer">
+          <a href="https://github.com/KashRazzaghi/Aegis-Protocol" target="_blank" rel="noreferrer">
             Source
           </a>
         </div>
@@ -461,7 +461,7 @@ export default function Landing({
                 {n.label}
               </a>
             ))}
-            <a href="https://github.com/ctrlshifthash/aegis" target="_blank" rel="noreferrer">
+            <a href="https://github.com/KashRazzaghi/Aegis-Protocol" target="_blank" rel="noreferrer">
               Source
             </a>
           </div>

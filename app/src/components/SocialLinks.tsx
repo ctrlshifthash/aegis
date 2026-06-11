@@ -2,7 +2,7 @@
 const LINKS = {
   pump: 'https://pump.fun',
   x: 'https://x.com/tryAegisProtocol',
-  github: 'https://github.com/ctrlshifthash/aegis',
+  github: 'https://github.com/KashRazzaghi/Aegis-Protocol',
 };
 
 export function SocialLinks() {
