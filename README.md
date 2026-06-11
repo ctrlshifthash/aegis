@@ -66,30 +66,27 @@ Because every deposit in a pool is identical and the withdrawal can't be matched
 
 ```mermaid
 sequenceDiagram
-    actor A as Alice (sender)
+    autonumber
+    actor A as Alice · sender
     participant Pool as Aegis Pool
     participant Tree as Merkle Tree
-    actor B as Bob (recipient)
+    actor B as Bob · recipient
 
-    rect rgb(8, 33, 66)
-    Note over A: ① Generate secret note (in browser)
+    Note over A,Tree: DEPOSIT — all secrets generated locally in the browser
     A->>A: nullifier, secret = random
     A->>A: commitment = Poseidon(nullifier, secret)
-    A->>Pool: approve + deposit(commitment) with 100 USDC
+    A->>Pool: approve + deposit(commitment) · 100 USDC
     Pool->>Tree: insert commitment as a leaf
-    Pool-->>A: Deposit event (leafIndex)
-    Note over A: ② Save the note offline 🔑
-    end
+    Pool-->>A: Deposit event · leafIndex
+    Note over A: save the secret note offline 🔑
 
-    rect rgb(10, 35, 72)
-    Note over B: ③ Later — from any wallet
+    Note over Pool,B: WITHDRAW — later, from any wallet
     B->>B: rebuild Merkle path from on-chain logs
-    B->>B: generate Groth16 proof (in browser)
-    B->>Pool: withdraw(proof, root, nullifierHash, recipient=Bob)
-    Pool->>Pool: verify SNARK + check root is known
-    Pool->>Pool: mark nullifier spent (no double-spend)
-    Pool->>B: transfer 100 USDC ✅
-    end
+    B->>B: generate Groth16 proof in the browser
+    B->>Pool: withdraw(proof, root, nullifierHash, recipient = Bob)
+    Pool->>Pool: verify SNARK · check root is known
+    Pool->>Pool: mark nullifier spent · no double-spend
+    Pool-->>B: transfer 100 USDC
 ```
 
 - **Commitment** = `Poseidon(nullifier, secret)` — published on deposit. Hides the secret.
