@@ -23,7 +23,7 @@
 <br/>
 
 [![Website](https://img.shields.io/badge/%F0%9F%8C%90%20tryaegisprotocol.app-2775CA?style=for-the-badge)](https://tryaegisprotocol.app)
-[![X](https://img.shields.io/badge/%40tryAegisProtocol-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/tryAegisProtocol)
+[![X](https://img.shields.io/badge/%40AegisProtocolHQ-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/AegisProtocolHQ)
 
 </div>
 
