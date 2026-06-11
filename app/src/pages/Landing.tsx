@@ -92,7 +92,7 @@ export default function Landing({
         <div className="wrap hero-inner">
           <div className="hero-copy">
             <span className="eyebrow">
-              <span className="live-dot" /> Zero-knowledge privacy · Ethereum
+              <span className="live-dot" /> Zero-knowledge privacy · USDC
             </span>
             <h1>
               Send USDC that <span className="it">can&rsquo;t be traced</span> back to you.

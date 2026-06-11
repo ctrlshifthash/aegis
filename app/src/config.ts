@@ -33,9 +33,9 @@ const ZERO = '' as const;
 // They come from env so the same build works across networks.
 const MAINNET: NetworkConfig = {
   chain: mainnet,
-  name: 'Ethereum',
+  name: 'Mainnet',
   explorerUrl: 'https://etherscan.io',
-  // Canonical Ethereum mainnet USDC (6 decimals).
+  // Canonical mainnet USDC (6 decimals).
   usdc: (env.VITE_MAINNET_USDC ?? '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48') as Address,
   pools: {
     '100': (env.VITE_MAINNET_POOL_100 ?? ZERO) as Address | '',
@@ -70,7 +70,7 @@ const LOCAL: NetworkConfig = {
   },
 };
 
-// Which network this build targets. Default: Ethereum mainnet (chainId 1).
+// Which network this build targets. Default: mainnet (chainId 1).
 //   VITE_CHAIN_ID=11155111 -> Sepolia testnet
 //   VITE_CHAIN_ID=31337    -> local anvil / fork
 const ACTIVE_CHAIN_ID = Number(env.VITE_CHAIN_ID ?? 1);

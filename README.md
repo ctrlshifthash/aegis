@@ -4,7 +4,7 @@
 
 # Aegis Protocol
 
-### Zero-knowledge private USDC transfers on Ethereum
+### Zero-knowledge private USDC transfers
 
 *Deposit a fixed amount of USDC. Get a secret note. Withdraw to a fresh address.*
 *A zk-SNARK severs the on-chain link between sender and receiver — no custody, no intermediary, no record of who paid whom.*
@@ -21,11 +21,6 @@
 [![Privy](https://img.shields.io/badge/Wallets-Privy-6A6FF5?style=for-the-badge)](https://privy.io)
 
 </div>
-
----
-
-> [!WARNING]
-> **Aegis Protocol is unaudited, experimental privacy software.** Withdrawals are **irreversible**. If you lose your note, your funds are **gone forever**. You are **solely responsible** for complying with all laws, sanctions, and tax rules in your jurisdiction. Test on a fork/testnet, get an independent audit before mainnet, and read [Security & Compliance](#%EF%B8%8F-security--compliance).
 
 ---
 
@@ -52,7 +47,7 @@
 
 ## 🛡️ What is Aegis?
 
-Every transfer you make on Ethereum is public forever. Anyone can see that address `A` paid address `B`, how much, and when. Aegis breaks that link.
+Every transfer you make on-chain is public forever. Anyone can see that address `A` paid address `B`, how much, and when. Aegis breaks that link.
 
 It is a **fixed-denomination shielded pool** for **USDC**, modelled on the Tornado-Cash construction and adapted for the ERC-20 token. The name fits: the *aegis* is the shield of Athena and Zeus in Greek myth — Aegis is, literally, a shield over your transfers.
 
@@ -194,7 +189,7 @@ flowchart TB
         ZK["circomlibjs (Poseidon)<br/>snarkjs (Groth16 prover)<br/>withdraw.wasm + .zkey"]
     end
 
-    subgraph Chain["⛓️ Ethereum (EVM)"]
+    subgraph Chain["⛓️ On-chain (EVM)"]
         Pool["UsdcPrivacyPool<br/>(one per denomination)"]
         Merkle["MerkleTreeWithHistory"]
         Verifier["Groth16 Verifier"]
