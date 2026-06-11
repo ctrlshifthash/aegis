@@ -116,13 +116,6 @@ export default function SolanaTransfer({
         ← Back to home
       </button>
 
-      <div className="banner banner-warn">
-        <span>
-          Direct USDC transfer on <b>Solana</b> (SPL) — this is a normal, public transfer, <b>not</b>{' '}
-          private. The shielded/ZK pools are on the EVM side.
-        </span>
-      </div>
-
       <div className="balance-card reveal in">
         <div className="bc-left">
           <span className="l">Your USDC balance · Solana</span>
@@ -203,8 +196,7 @@ export default function SolanaTransfer({
       </div>
 
       <p className="footer-disclaimer" style={{ marginTop: '1.6rem', textAlign: 'center', marginInline: 'auto' }}>
-        Direct on-chain SPL transfer. Non-custodial — your wallet signs every transfer. Set
-        VITE_SOLANA_RPC_URL to a Helius endpoint for reliable RPC.
+        Non-custodial — your wallet signs every transfer.
       </p>
     </div>
   );
